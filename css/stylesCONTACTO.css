@@ -178,6 +178,20 @@ h3.titulos-areas {
     flex-direction: column;
 }
 
+/* JS FORM */           
+
+#respuestaForm {
+	display: none;
+}
+
+#form.remove-form {
+	display: none;
+}
+
+#respuestaForm.gracias {
+	display: block;
+}
+
 .input {
 	box-shadow: 0px 0px 15px #5ec2f0;
 	margin: 8px;
@@ -385,6 +399,8 @@ ul#listaFooter {
 	#div-form{
 		width: 100%;
 	}
+
+	
 
 	label {
 		font-size: 30px;

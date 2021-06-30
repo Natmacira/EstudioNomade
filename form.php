@@ -20,28 +20,25 @@ $mail = '';
 
 if ( ! empty( $_POST['nombre']) && is_string( $_POST['nombre']) ) {
     $nombre = $_POST['nombre'];
-    echo $nombre . '<br>' ;
-} else { 
-    echo 'No hay nombre';
-    echo '<br>';
-
-
-};
+}
 
 if ( ! empty( $_POST['texto-consulta']) && is_string( $_POST['texto-consulta']) ) {
     $texto_consulta = $_POST['texto-consulta'];
-    echo $texto_consulta . '<br>';
-} else { 
-    echo 'No hay texto';
-    echo '<br>';
-};
+  
+} 
 
 if ( ! empty( $_POST['mail']) && filter_var( $_POST['mail'], FILTER_VALIDATE_EMAIL) ) {
     $mail = $_POST['mail'];
-    echo $mail . '<br>';
-} else { 
-    echo 'No hay e-mail';
-    echo '<br>';
-};
+  
+} 
 
+
+ $mensaje = " 'Nombre: ' .  $nombre . '  Consulta:  ' . $texto_consulta . '   Mail:  ' . $mail . ";
+
+if ( $nombre !== '' && $texto_consulta !== '' && $mail  !== ''  ) {
+      mail('natmaciraestudionomade@gmail.com', 'Respuesta Form', $mensaje); 
+      header('location: contacto.html#respuestaForm.gracias ');
+  } else {
+      header('location: contacto.html');
+  }
 
