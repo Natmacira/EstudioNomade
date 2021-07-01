@@ -27,8 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     }});
 
-    formEnviado();
-
+  
 
 
     /*
