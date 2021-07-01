@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a794985fd2.js" crossorigin="anonymous"></script>
     <script src="../js/JS.js"></script>
+    <script src="../js/form.js"></script>
 </head>
 
 <body>
@@ -83,13 +84,18 @@
             </p> <br>
 
             <div id="div-form">
-                <form action="../index.php" id="form" method="POST">
+                <form action="../form.php" id="form" method="POST">
                     <label for="nombre">Nom:</label> <input class="input" name="nombre" type="text" id="nombre" >
                     <label for="consulta">Consultation:</label><textarea class="input" name="texto-consulta" id="textarea"
                         cols="30" rows="10" ></textarea>
                     <label for="mail">E-mail:</label><input class="input" name="mail" type="mail" id="email" >
                     <input class="input" type="submit" id="submit" value="Enviar">
                 </form>
+                <article id="respuestaForm">
+                    <p>
+                        Merci beaucoup 
+                    </p>
+                </article>
             </div>
         </article>
     </main>

@@ -7,25 +7,23 @@ document.addEventListener('DOMContentLoaded', function () {
     const respuestaForm     = document.querySelector("#respuestaForm");
 
 
-   function formEnviado() {
-
-        
-
-        formBtn.forEach(function (formBtn) {
-            formBtn.addEventListener('click', function () {
-                respuestaForm.classList.add('gracias');
-                form.classList.add('remove-form');
+   
+            form.addEventListener('submit', function () {
+            respuestaForm.classList.add('gracias');
+            form.classList.add('remove-form');
 
 
-            });
-        });
+            })});
+      
+
+ 
 
       
 
 
 
 
-    }});
+    
 
   
 

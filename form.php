@@ -37,7 +37,7 @@ if ( ! empty( $_POST['mail']) && filter_var( $_POST['mail'], FILTER_VALIDATE_EMA
 
 if ( $nombre !== '' && $texto_consulta !== '' && $mail  !== ''  ) {
       mail('natmaciraestudionomade@gmail.com', 'Respuesta Form', $mensaje); 
-      header('location: contacto.html#respuestaForm.gracias ');
+      header('location: #respuestaForm.gracias ');
   } else {
       header('location: contacto.html');
   }
